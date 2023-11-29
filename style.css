@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.board {
+    border-collapse: collapse;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #616161;
+    transition: background-color 0.3s ease;
+}
+
+.square:hover {
+    background-color: #838383;
+    box-shadow: #838383;
+}
+
+.square:active {
+    background-color: #e0e0e0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilo para destacar o vencedor */
+.square.winner {
+    background-color: #c8e6c9; /* Verde claro */
+}
+
+/* Estilo para destacar a célula clicada */
+.square.clicked {
+    background-color: #e0f7fa; /* Azul claro */
+}
